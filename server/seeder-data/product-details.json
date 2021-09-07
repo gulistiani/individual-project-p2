@@ -1,0 +1,37 @@
+[
+    {
+        "productId": 1,
+        "sequence": 1,
+        "title": "How to Get Started With JavaScript",
+        "url": "ItYye9h_RXg&list=PL0eyrZgxdwhxNGMWROnaY35NLyEjTqcgB",
+        "duration": 208
+    },
+    {
+        "productId": 1,
+        "sequence": 2,
+        "title": "Which Tools to Use When Developing JavaScript",
+        "url": "ns_L4kpxY8c&list=PL0eyrZgxdwhxNGMWROnaY35NLyEjTqcgB&index=2",
+        "duration": 268
+    },
+    {
+        "productId": 1,
+        "sequence": 3,
+        "title": "How to Install Extensions For JavaScript Development",
+        "url": "ZouJQRxgem0&list=PL0eyrZgxdwhxNGMWROnaY35NLyEjTqcgB&index=3",
+        "duration": 380
+    },
+    {
+        "productId": 1,
+        "sequence": 4,
+        "title": "How to Include JavaScript in Our HTML",
+        "url": "AD5hxsFJc4o&list=PL0eyrZgxdwhxNGMWROnaY35NLyEjTqcgB&index=4",
+        "duration": 499
+    },
+    {
+        "productId": 1,
+        "sequence": 5,
+        "title": "How to Use the Developer Tool for JavaScript Development",
+        "url": "sjmyfwESv1g&list=PL0eyrZgxdwhxNGMWROnaY35NLyEjTqcgB&index=5",
+        "duration": 381
+    }
+]

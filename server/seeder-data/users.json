@@ -1,0 +1,65 @@
+[
+    {
+        "firstName": "Atun",
+        "lastName": "Fitnatun",
+        "email": "atun@mail.com",
+        "mobile": "081111111111",
+        "password": "12345678"
+    },
+    {
+        "firstName": "Barbie",
+        "lastName": "Surabi",
+        "email": "barbie@mail.com",
+        "password": "12345678",
+        "mobile": "082222222222"
+    },
+    {
+        "firstName": "Cecep",
+        "lastName": "Gorbacep",
+        "email": "cecep@mail.com",
+        "password": "12345678",
+        "mobile": "083333333333"
+    },
+    {
+        "firstName": "Dodon",
+        "lastName": "Sumardon",
+        "email": "dodon@mail.com",
+        "password": "12345678",
+        "mobile": "084444444444"
+    },
+    {
+        "firstName": "Eneng",
+        "lastName": "Sukmaneng",
+        "email": "eneng@mail.com",
+        "password": "12345678",
+        "mobile": "085555555555"
+    },
+    {
+        "firstName": "Fulan",
+        "lastName": "Marfulan",
+        "email": "fulan@mail.com",
+        "password": "12345678",
+        "mobile": "0866666666666"
+    },
+    {
+        "firstName": "Gopur",
+        "lastName": "Semapur",
+        "email": "gopur@mail.com",
+        "password": "12345678",
+        "mobile": "087777777777"
+    },
+    {
+        "firstName": "Hejo",
+        "lastName": "Surejo",
+        "email": "hejo@mail.com",
+        "password": "12345678",
+        "mobile": "088888888888"
+    },
+    {
+        "firstName": "Inem",
+        "lastName": "Marinem",
+        "email": "inem@mail.com",
+        "password": "12345678",
+        "mobile": "0899999999999"
+    }
+]

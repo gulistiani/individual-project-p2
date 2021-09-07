@@ -1,0 +1,20 @@
+[
+    {
+        "code": "PROMONIH",
+        "type": "%",
+        "value": 10,
+        "status": "Y",
+        "maxRedeem": 100,
+        "currentCount": 90,
+        "expiredDate": "2021-12-31"
+    },
+    {
+        "code": "PROMOLAGI",
+        "type": "Amount",
+        "value": 20000,
+        "status": "Y",
+        "maxRedeem": 100,
+        "currentCount": 0,
+        "expiredDate": "2021-12-31"
+    }
+]

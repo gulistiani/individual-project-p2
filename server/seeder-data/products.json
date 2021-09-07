@@ -1,0 +1,164 @@
+[
+    {
+        "name": "The Complete JavaScript CourseL From Zero to Expert",
+        "description": "Kita akan belajar ....",
+        "alias": "javascript node react",
+        "price": 100000,
+        "discountedPrice": 90000,
+        "imageURL": "js.jpg",
+        "categoryId": 1
+    },
+    {
+        "name": "Flutter & Dart - The Complete Guide",
+        "description": "Kita akan belajar ....",
+        "alias": "flutter dart frontend",
+        "price": 100000,
+        "discountedPrice": 90000,
+        "imageURL": "flutter.jpg",
+        "categoryId": 1
+    },
+    {
+        "name": "100 Days of COde - The Complete Python Pro Bootcamp for 2021",
+        "description": "Kita akan belajar ....",
+        "alias": "python bootcamp programming",
+        "price": 100000,
+        "discountedPrice": 90000,
+        "imageURL": "python.jpg",
+        "categoryId": 1
+    },
+    {
+        "name": "The Complete 2021 Web Development Bootcamp",
+        "description": "Kita akan belajar ....",
+        "alias": "javascript node react",
+        "price": 100000,
+        "discountedPrice": 90000,
+        "imageURL": "webdev.jpg",
+        "categoryId": 1
+    },
+    {
+        "name": "PHP Laravel from Beginner to Master",
+        "description": "Kita akan belajar ....",
+        "alias": "php laravel",
+        "price": 100000,
+        "discountedPrice": 90000,
+        "imageURL": "laravel.jpg",
+        "categoryId": 1
+    },
+    {
+        "name": "Gitlab CI: Pipelines, CI/CD and DevOps for Beginner",
+        "description": "Kita akan belajar ....",
+        "alias": "system admin CI CD dev op devops git gitlab",
+        "price": 100000,
+        "discountedPrice": 90000,
+        "imageURL": "cicd.jpg",
+        "categoryId": 2
+    },
+    {
+        "name": "Machine Learning Bootcamp with Python",
+        "description": "Kita akan belajar ....",
+        "alias": "ai machine learning big data python bootcamp",
+        "price": 100000,
+        "discountedPrice": 90000,
+        "imageURL": "ml.jpg",
+        "categoryId": 1
+    },
+    {
+        "name": "Docker and Kubernetes: The Complete Guide",
+        "description": "Kita akan belajar ....",
+        "alias": "docker devops devop kubernetes",
+        "price": 100000,
+        "discountedPrice": 90000,
+        "imageURL": "docker.jpg",
+        "categoryId": 2
+    },
+    {
+        "name": "Master the Linux in 11 Hours",
+        "description": "Kita akan belajar ....",
+        "alias": "linux server devops",
+        "price": 100000,
+        "discountedPrice": 90000,
+        "imageURL": "linux.jpg",
+        "categoryId": 2
+    },
+    {
+        "name": "Tableau Hands-On Training for Data Science",
+        "description": "Kita akan belajar ....",
+        "alias": "tableau bi business intelligence data science",
+        "price": 100000,
+        "discountedPrice": 90000,
+        "imageURL": "tableau.jpg",
+        "categoryId": 3
+    },
+    {
+        "name": "Data Warehouse Fundamentals for Beginners",
+        "description": "Kita akan belajar ....",
+        "alias": "dwh data warehouse science datamart",
+        "price": 100000,
+        "discountedPrice": 90000,
+        "imageURL": "dwh.jpg",
+        "categoryId": 3
+    },
+    {
+        "name": "React - The Complete Guide",
+        "description": "Kita akan belajar ....",
+        "alias": "javascript react",
+        "price": 100000,
+        "discountedPrice": 90000,
+        "imageURL": "react.jpg",
+        "categoryId": 1
+    },
+    {
+        "name": "Pentaho DI Fundamentals and DWH Concepts",
+        "description": "Kita akan belajar ....",
+        "alias": "dwh data warehouse datamart ETL pentaho",
+        "price": 100000,
+        "discountedPrice": 90000,
+        "imageURL": "pentaho.jpg",
+        "categoryId": 3
+    },
+    {
+        "name": "DevOps, CI/CD Integration for Beginners",
+        "description": "Kita akan belajar ....",
+        "alias": "devops ci cd",
+        "price": 100000,
+        "discountedPrice": 90000,
+        "imageURL": "webdev.jpg",
+        "categoryId": 2
+    },
+    {
+        "name": "Networking Fundamentals. Your CCNA Start",
+        "description": "Kita akan belajar ....",
+        "alias": "network ccna",
+        "price": 100000,
+        "discountedPrice": 90000,
+        "imageURL": "ccna.jpg",
+        "categoryId": 4
+    },
+    {
+        "name": "The Complete Cyber Security Course: Network Security",
+        "description": "Kita akan belajar ....",
+        "alias": "security cyber hacker",
+        "price": 100000,
+        "discountedPrice": 90000,
+        "imageURL": "cyber.jpg",
+        "categoryId": 4
+    },
+    {
+        "name": "Data Science: Deep Learning and Neural Networks in Python",
+        "description": "Kita akan belajar ....",
+        "alias": "python deep learning neural network",
+        "price": 100000,
+        "discountedPrice": 90000,
+        "imageURL": "deeplearning.jpg",
+        "categoryId": 3
+    },
+    {
+        "name": "Network Hacking Continued - Intermediate to Advanced",
+        "description": "Kita akan belajar ....",
+        "alias": "hack network security",
+        "price": 100000,
+        "discountedPrice": 90000,
+        "imageURL": "hacking.jpg",
+        "categoryId": 4
+    }
+]
