@@ -25,7 +25,6 @@ router.get('/products/category/:categoryId', ProductController.getProductByCateg
 router.get('/products/search/:inputSearch', ProductController.searchProduct)
 router.get('/products/image/:name', ProductController.download)
 
-
 router.use(authenticate)
 router.post('/topics', ProductController.getTopicDetail)
 router.post('/saveWatched', ProductController.saveWatched)

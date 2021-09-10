@@ -1,6 +1,6 @@
 const { Product, Progress, sequelize } = require('../models')
 const { decodeToken } = require('../helpers/jwt')
-const uploadFile = require("../middlewares/upload");
+//const uploadFile = require("../middlewares/upload");
 const fs = require('fs')
 const moment = require('moment')
 const baseURL = 'https://e-commerce-server-side.herokuapp.com/products/image/'
@@ -360,7 +360,8 @@ class ProductController {
         console.log('----------------------- sampe sini');
         const fileName = req.params.name;
         console.log('----------------------- 362');
-        const directoryPath = __basedir + "/public/image/courses/";
+        //const directoryPath = __basedir + "/public/image/courses/";
+        const directoryPath = __basedir + "/resources/static/assets/product/";
         console.log('----------------------- 364');
 
         res.sendFile(directoryPath + fileName, fileName, (err) => {
@@ -370,6 +371,7 @@ class ProductController {
                 console.log(err);
                 next({ message: 'Could not download the file' })
             }
+            console.log('----------------------- 373');
         });
     };
 }
