@@ -1,21 +1,17 @@
 <template>
-    <footer class="dark footer section bg-aqua-900">
+    <footer class="dark footer section bg-aqua-900 pl-8">
         <div class="container">
             <div class="row">
 
-                <div class="col-md-3 col-md-6 col-xs-12">
+                <div class="col-md-3 col-md-6 col-xs-12 ">
                     <div class="widget">
                         <div class="widget-title">
-                            <h4 class="">About Adamyster</h4>
+                            <h4 class="">FAQ</h4>
                             <hr>
                         </div>
-                        <p class="">Lorem Ipsum is simply dummy text of the printing and typesetting
-                            industry. Lorem Ipsum has
-                            been the
-                            industry's standard dummy text ever since the 1500s, when an unknown printer took...</p>
-                        <button @click="goToAbout"
-                            class="mx-1 my-4 w-60 h-20 border-radius text-center rounded-lg text-2xl text-white bg-aqua-600 hover:bg-aqua-700">Read
-                            More</button>
+                        <p class="">We know that you have so much questions. Please visit our FAQ page</p>
+                        <button @click="goToFAQ"
+                            class="mx-1 my-4 w-60 h-20 border-radius text-center rounded-lg text-2xl text-white bg-aqua-600 hover:bg-aqua-700">FAQ</button>
                     </div>
                 </div>
 
@@ -82,8 +78,8 @@
         computed: {
         },
         methods: {
-            goToAbout() {
-                this.$router.push('/about')
+            goToFAQ() {
+                this.$router.push('/faq')
             },
         },
         created() {

@@ -1,5 +1,5 @@
 <template>
-    <div class="bg-gradient-to-r from-yellow-400 via-red-500 to-pink-500">
+    <div class="bg-gradient-to-r from-blue-800 via-blue-500 to-blue-800">
         <div id="wrapper">
             <div class="container">
                 <div class="row login-wrapper">
@@ -10,6 +10,13 @@
 
                         <div v-if="option === 'login'" class="panel panel-login">
                             <div class="panel-heading">
+                                <div class="row">
+                                    <button v-google-signin-button=""
+                                        class="mdi mdi-google mb-10 flex items-center justify-center focus:outline-none text-gray-200 text-3xl sm:text-xl bg-primary hover:bg-blue-800 rounded py-2 w-full transition duration-150 ease-in">
+                                        &nbsp; Continue with Google</button>
+                                </div>
+
+
                                 <div class="row">
                                     <div @click="goToLogin" class="col-xs-6 font-bold text-aqua-700">Login </div>
                                     <div @click="goToRegister" class="col-xs-6">Register </div>
@@ -219,7 +226,6 @@
             },
             login() {
                 if (this.optionLogin === 'email') {
-                    console.log('masuk siniiii');
                     this.$store.dispatch('loginEmail', {
                         email: this.emailLog,
                         password: this.passwordLog
@@ -234,7 +240,7 @@
                 }
             },
             OnGoogleAuthSuccess(idToken) {
-                this.$store.dispatch('googleSignInAction', idToken)
+                this.$store.dispatch('googleSignIn', idToken)
             },
             OnGoogleAuthFail(error) {
                 console.log(error)

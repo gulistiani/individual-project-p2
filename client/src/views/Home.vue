@@ -2,7 +2,30 @@
   <div class="">
     <Header></Header>
     <Hero></Hero>
-    <Card></Card>
+
+    <section class="white section">
+      <div class="container ">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="section-title text-center">
+              <h4>Available Courses</h4>
+              <p>Temukan jalan ninjamu</p>
+            </div>
+          </div>
+        </div>
+
+        <Card></Card>
+
+        <div class="flex justify-center">
+          <button @click="goToCourse" class="mt-28 w-96 h-16 btn btn-default"><i class="mdi mdi-login"></i> Find much
+            more
+            ...</button>
+        </div>
+
+
+      </div>
+    </section>
+
     <Testimonial></Testimonial>
     <Footer></Footer>
   </div>
@@ -25,9 +48,12 @@
     computed: {
     },
     methods: {
+      goToCourse() {
+        this.$router.push('/courses')
+      },
     },
     created() {
-
+      this.$store.dispatch('getProduct', { limit: 8 })
     }
   }
 </script>

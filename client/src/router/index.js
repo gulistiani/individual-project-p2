@@ -7,6 +7,7 @@ import About from '../views/About.vue'
 import Course from '../views/Course.vue'
 import CourseDetail from '../views/CourseDetail.vue'
 import MyLearning from '../views/MyLearning.vue'
+import Topic from '../views/Topic.vue'
 import Account from '../views/Account.vue'
 import FAQ from '../views/FAQ.vue'
 import Cart from '../views/Cart.vue'
@@ -36,9 +37,14 @@ const routes = [
     component: Course
   },
   {
-    path: '/detail',
+    path: '/course-detail/:id',
     name: 'CourseDetail',
     component: CourseDetail
+  },
+  {
+    path: '/topic/:productId/seq/:sequence',
+    name: 'Topic',
+    component: Topic
   },
   {
     path: '/mylearning',

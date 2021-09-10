@@ -10,9 +10,6 @@
     methods: {
     },
     created() {
-      if (!localStorage.access_token) {
-        this.$router.push('/login')
-      }
     }
   }
 </script>

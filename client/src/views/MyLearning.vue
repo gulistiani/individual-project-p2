@@ -8,6 +8,7 @@
                     <div class="col-md-12">
                         <div class="section-title text-center">
                             <h4>Your Courses</h4>
+
                         </div>
                     </div>
                 </div>
@@ -38,7 +39,7 @@
         methods: {
         },
         created() {
-
+            this.$store.dispatch('getProduct', { limit: 'all' })
         }
     }
 </script>

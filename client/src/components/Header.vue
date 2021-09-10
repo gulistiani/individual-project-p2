@@ -11,7 +11,7 @@
                         </button>
 
                         <div class="pb-2 text-left">
-                            <img src="logo.png" width=100 height=50 alt="">
+                            <img src="/logo.png" width=100 height=50 alt="">
                         </div>
 
                     </div>
@@ -28,27 +28,27 @@
                             <li @click="goToCourse"
                                 class="py-2 px-6 text-center  rounded text-2xl text-aqua-700 hover:text-aqua-800 hover:bg-aqua">
                                 Courses </li>
-                            <li @click="goToMyLearning"
+                            <li v-if="user" @click="goToMyLearning"
                                 class="py-2 px-6 text-center  rounded text-2xl text-aqua-700 hover:text-aqua-800 hover:bg-aqua">
                                 My Learning </li>
-                            <!-- <li @click="goToAccount"
+                            <li v-if="user" @click="goToAccount"
                                 class="mr-6 py-2 px-6 text-center  rounded text-2xl text-aqua-700 hover:text-aqua-800 hover:bg-aqua">
-                                Account </li> -->
-                            <li @click="goToFAQ"
+                                Account </li>
+                            <!-- <li @click="goToFAQ"
                                 class="mr-6 py-2 px-6 text-center  rounded text-2xl text-aqua-700 hover:text-aqua-800 hover:bg-aqua">
-                                FAQ </li>
+                                FAQ </li> -->
 
                             <li @click="goToCart"
-                                class="mdi mdi-cart text-5xl mr-6  px-6 text-center  rounded text-2xl text-aqua-700 hover:text-aqua-800">
+                                class="mdi mdi-cart-outline text-5xl mr-6  px-6 text-center  rounded text-2xl text-aqua-700 hover:text-aqua-800">
                             </li>
                         </ul>
 
                         <ul class="nav navbar-nav navbar-right pt-21mx-10">
-                            <li v-if="isLoggedIn === false" @click="goToLogin"
+                            <li v-if="!user" @click="goToLogin"
                                 class="py-2 px-4 w-48 text-center rounded-lg text-2xl text-white bg-aqua-700 hover:bg-aqua-800">
                                 <i class="mdi mdi-account-outline"></i> Login
                             </li>
-                            <li v-if="isLoggedIn === true"
+                            <li v-if="user" @click="logout"
                                 class="py-2 px-4 w-48 text-center rounded-lg text-2xl text-white bg-aqua-700 hover:bg-aqua-800">
                                 <i class="mdi mdi-logout"></i> Logout
                             </li>
@@ -67,10 +67,17 @@
         components: {},
         data() {
             return {
-                isLoggedIn: localStorage.access_toke ? true : false
+
             }
         },
         computed: {
+            isLoogedIn() {
+                if (localStorage.access_token) return true
+                else return false
+            },
+            user() {
+                return this.$store.state.currentUser
+            },
         },
         methods: {
             goToHome() {
@@ -97,13 +104,29 @@
             goToLogin() {
                 this.$router.push('/login')
             },
-            logoutMethod() {
-                localStorage.clear()
-                this.$store.dispatch('getCourse')
-            },
+            logout() {
+                Swal.fire({
+                    title: 'Logout?',
+                    text: "You will be missed :(",
+                    showCancelButton: true,
+                    confirmButtonColor: '#1b7501',
+                    cancelButtonColor: '#e38a05',
+                    confirmButtonText: `Yes, I'll be back`
+                }).then((result) => {
+                    if (result.isConfirmed === true) {
+                        localStorage.clear()
+                        this.$store.commit('SET_CURRENT_USER', '')
+                        Swal.fire('You have signed out')
+                        this.$store.dispatch('getProduct', { limit: 'all' })
+
+                        //if (this.$route.name !== 'Home') {
+                        this.$router.push('/')
+                        //}
+                    }
+                })
+            }
         },
         created() {
-
         }
     }
 </script>
