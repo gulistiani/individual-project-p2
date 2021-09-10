@@ -24,11 +24,11 @@ router.get('/products/topic/:productId', ProductController.getProductTopic)
 router.get('/products/category/:categoryId', ProductController.getProductByCategory)
 router.get('/products/search/:inputSearch', ProductController.searchProduct)
 router.get('/products/image/:name', ProductController.download)
+router.post('/topics', ProductController.getTopicDetail)
 
 router.use(authenticate)
-router.post('/topics', ProductController.getTopicDetail)
-router.post('/saveWatched', ProductController.saveWatched)
 
+router.post('/saveWatched', ProductController.saveWatched)
 router.get('/cart', CartController.getCart)
 router.post('/cart/add/:productId', CartController.addToCart)
 router.post('/cart/delete/:cartId', CartController.deleteFromCart)
