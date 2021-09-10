@@ -3,8 +3,8 @@ import Vuex from 'vuex'
 import axios from 'axios'
 import router from '../router'
 
-//const axiosInstance = axios.create({ baseURL: 'https://kanban-gulis.herokuapp.com/' })
-const axiosInstance = axios.create({ baseURL: 'http://localhost:3000' })
+const axiosInstance = axios.create({ baseURL: 'https://academyster.herokuapp.com/' })
+//const axiosInstance = axios.create({ baseURL: 'http://localhost:3000' })
 
 Vue.use(Vuex)
 
@@ -165,8 +165,6 @@ export default new Vuex.Store({
         .then(result => {
           localStorage.access_token = result.data.access_token
           localStorage.firstName = result.data.result.firstName
-          localStorage.personalWorkspaceName = result.data.result.personalWorkspaceName
-          localStorage.teamWorkspaceName = result.data.result.teamWorkspaceName
           context.commit('SET_CURRENT_USER', result.data.result)
           router.push('/')
         })
