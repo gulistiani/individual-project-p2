@@ -4,9 +4,8 @@
         "description": "Kita akan belajar ....",
         "alias": "javascript node react",
         "price": 100000,
-        "discountedPrice": null,
-        "imageURL": "https://i.ibb.co/znWwTBB/js.jpg",
-        "instructor": "Kakashi Sensei",
+        "discountedPrice": 90000,
+        "imageURL": "js.jpg",
         "categoryId": 1
     },
     {
@@ -15,18 +14,16 @@
         "alias": "flutter dart frontend",
         "price": 100000,
         "discountedPrice": 90000,
-        "imageURL": "https://i.ibb.co/ckBhY40/flutter.jpg",
-        "instructor": "Kakashi Sensei",
+        "imageURL": "flutter.jpg",
         "categoryId": 1
     },
     {
-        "name": "100 Days of Code - The Complete Python Pro Bootcamp for 2021",
+        "name": "100 Days of COde - The Complete Python Pro Bootcamp for 2021",
         "description": "Kita akan belajar ....",
         "alias": "python bootcamp programming",
         "price": 100000,
         "discountedPrice": 90000,
-        "imageURL": "https://i.ibb.co/1LyC1Vs/python.jpg",
-        "instructor": "Kurenai Sensei",
+        "imageURL": "python.jpg",
         "categoryId": 1
     },
     {
@@ -34,9 +31,8 @@
         "description": "Kita akan belajar ....",
         "alias": "javascript node react",
         "price": 100000,
-        "discountedPrice": null,
-        "imageURL": "https://i.ibb.co/qyk003D/webdev.jpg",
-        "instructor": "Kurenai Sensei",
+        "discountedPrice": 90000,
+        "imageURL": "webdev.jpg",
         "categoryId": 1
     },
     {
@@ -45,8 +41,7 @@
         "alias": "php laravel",
         "price": 100000,
         "discountedPrice": 90000,
-        "imageURL": "https://i.ibb.co/GdhDFXQ/laravel.jpg",
-        "instructor": "Iruka Sensei",
+        "imageURL": "laravel.jpg",
         "categoryId": 1
     },
     {
@@ -55,8 +50,7 @@
         "alias": "system admin CI CD dev op devops git gitlab",
         "price": 100000,
         "discountedPrice": 90000,
-        "imageURL": "https://i.ibb.co/gvRxCgD/cicd.jpg",
-        "instructor": "Iruka Sensei",
+        "imageURL": "cicd.jpg",
         "categoryId": 2
     },
     {
@@ -64,9 +58,8 @@
         "description": "Kita akan belajar ....",
         "alias": "ai machine learning big data python bootcamp",
         "price": 100000,
-        "discountedPrice": null,
-        "imageURL": "https://i.ibb.co/TtFBjQ8/ml.jpg",
-        "instructor": "Kakashi Sensei",
+        "discountedPrice": 90000,
+        "imageURL": "ml.jpg",
         "categoryId": 1
     },
     {
@@ -75,8 +68,7 @@
         "alias": "docker devops devop kubernetes",
         "price": 100000,
         "discountedPrice": 90000,
-        "imageURL": "https://i.ibb.co/27fqMQ0/docker.jpg",
-        "instructor": "Guy Sensei",
+        "imageURL": "docker.jpg",
         "categoryId": 2
     },
     {
@@ -84,9 +76,8 @@
         "description": "Kita akan belajar ....",
         "alias": "linux server devops",
         "price": 100000,
-        "discountedPrice": null,
-        "imageURL": "https://i.ibb.co/xYNH3DT/linux.jpg",
-        "instructor": "Guy Sensei",
+        "discountedPrice": 90000,
+        "imageURL": "linux.jpg",
         "categoryId": 2
     },
     {
@@ -95,8 +86,7 @@
         "alias": "tableau bi business intelligence data science",
         "price": 100000,
         "discountedPrice": 90000,
-        "imageURL": "https://i.ibb.co/m8fYz6h/tableau.jpg",
-        "instructor": "Jiraiya Sensei",
+        "imageURL": "tableau.jpg",
         "categoryId": 3
     },
     {
@@ -105,8 +95,7 @@
         "alias": "dwh data warehouse science datamart",
         "price": 100000,
         "discountedPrice": 90000,
-        "imageURL": "https://i.ibb.co/nMDDX82/dwh.jpg",
-        "instructor": "Jiraiya Sensei",
+        "imageURL": "dwh.jpg",
         "categoryId": 3
     },
     {
@@ -114,9 +103,8 @@
         "description": "Kita akan belajar ....",
         "alias": "javascript react",
         "price": 100000,
-        "discountedPrice": null,
-        "imageURL": "https://i.ibb.co/rbmqG1K/react.jpg",
-        "instructor": "Kakashi Sensei",
+        "discountedPrice": 90000,
+        "imageURL": "react.jpg",
         "categoryId": 1
     },
     {
@@ -124,9 +112,8 @@
         "description": "Kita akan belajar ....",
         "alias": "dwh data warehouse datamart ETL pentaho",
         "price": 100000,
-        "discountedPrice": null,
-        "imageURL": "https://i.ibb.co/wc467YC/pentaho.jpg",
-        "instructor": "Kurenai Sensei",
+        "discountedPrice": 90000,
+        "imageURL": "pentaho.jpg",
         "categoryId": 3
     },
     {
@@ -135,8 +122,7 @@
         "alias": "devops ci cd",
         "price": 100000,
         "discountedPrice": 90000,
-        "imageURL": "https://i.ibb.co/frnW7qD/devops.jpg",
-        "instructor": "Guy Sensei",
+        "imageURL": "webdev.jpg",
         "categoryId": 2
     },
     {
@@ -145,8 +131,7 @@
         "alias": "network ccna",
         "price": 100000,
         "discountedPrice": 90000,
-        "imageURL": "https://i.ibb.co/dt1sWBd/ccna.jpg",
-        "instructor": "Kakashi Sensei",
+        "imageURL": "ccna.jpg",
         "categoryId": 4
     },
     {
@@ -154,9 +139,8 @@
         "description": "Kita akan belajar ....",
         "alias": "security cyber hacker",
         "price": 100000,
-        "discountedPrice": null,
-        "imageURL": "https://i.ibb.co/H2NPST7/cyber.jpg",
-        "instructor": "Asuma Sensei",
+        "discountedPrice": 90000,
+        "imageURL": "cyber.jpg",
         "categoryId": 4
     },
     {
@@ -165,8 +149,7 @@
         "alias": "python deep learning neural network",
         "price": 100000,
         "discountedPrice": 90000,
-        "imageURL": "https://i.ibb.co/bXn4Chh/deeplearning.jpg",
-        "instructor": "Yamato Sensei",
+        "imageURL": "deeplearning.jpg",
         "categoryId": 3
     },
     {
@@ -174,9 +157,8 @@
         "description": "Kita akan belajar ....",
         "alias": "hack network security",
         "price": 100000,
-        "discountedPrice": null,
-        "imageURL": "https://i.ibb.co/b3Ff5R2/hacking.jpg",
-        "instructor": "Yamato Sensei",
+        "discountedPrice": 90000,
+        "imageURL": "hacking.jpg",
         "categoryId": 4
     }
 ]

@@ -3,8 +3,9 @@ const { decodeToken } = require('../helpers/jwt')
 //const uploadFile = require("../middlewares/upload");
 const fs = require('fs')
 const moment = require('moment')
-const baseURL = 'https://e-commerce-server-side.herokuapp.com/products/image/'
+//const baseURL = 'https://e-commerce-server-side.herokuapp.com/products/image/'
 //const baseURL = 'http://localhost:3000/products/image/'
+const baseURL = ''
 
 class ProductController {
     static getProduct(req, res, next) {
