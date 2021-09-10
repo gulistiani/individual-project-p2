@@ -10,7 +10,7 @@ const errorHandler = require('./middlewares/errorHandler')
 
 global.__basedir = __dirname;
 var corsOptions = {
-    origin: "https://academyster-gulis.web.app/"
+    origin: "https://academyster-gulis.web.app"
 };
 
 // var corsOptions = {
