@@ -1,7 +1,11 @@
-const { TrxHead, TrxDetail, sequelize } = require('../models')
+const { TrxHead, TrxDetail, Enrollment, sequelize } = require('../models')
+const { decodeToken } = require('../helpers/jwt')
 
 class CheckoutController {
     static createHead(req, res, next) {
+        const decodedtoken = decodeToken(req.headers.access_token)
+        const userId = decodedtoken.id
+
         TrxHead.create({
             userId: +req.body.userId,
             customerName: req.body.customerName,
@@ -58,6 +62,20 @@ class CheckoutController {
             })
     }
 
+    static createEnrollment(req, res, next) {
+        const decodedtoken = decodeToken(req.headers.access_token)
+        const userId = decodedtoken.id
+        const productId = +req.body.productId
+
+        Enrollment.create({ userId, productId })
+            .then(data => {
+                res.status(201).json({ success: true, result: data })
+            })
+            .catch(err => {
+                console.log(err);
+                next({ message: err.message })
+            })
+    }
     static getTransactionHead(req, res, next) {
         TrxHead.findAll({ where: { userId: req.currentUserId } })
             .then(data => {

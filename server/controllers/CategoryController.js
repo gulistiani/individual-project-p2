@@ -3,8 +3,8 @@ const validateMobile = require('../helpers/validateMobile')
 const uploadFile = require("../middlewares/upload");
 const fs = require('fs')
 const moment = require('moment')
-// const baseURL = 'https://e-commerce-server-side.herokuapp.com/products/image/'
-const baseURL = 'http://localhost:3000/products/image/'
+const baseURL = 'https://e-commerce-server-side.herokuapp.com/products/image/'
+//const baseURL = 'http://localhost:3000/products/image/'
 
 class CategoryController {
     static getCategory(req, res, next) {

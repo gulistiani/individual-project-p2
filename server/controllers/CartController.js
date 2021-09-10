@@ -8,16 +8,15 @@ class CartController {
         const decodedtoken = decodeToken(req.headers.access_token)
         const userId = decodedtoken.id
 
+        console.log(userId);
+
         sequelize.query(`select c.id,
                                 c."userId", 
                                 u."firstName", 
                                 u."lastName", 
                                 c."productId" , 
-                                c.quantity, 
                                 p."name" as "productName", 
                                 p.description as "productDescription",
-                                p.stock as "productStock",
-                                p.weight as "productWeight",
                                 p.price as "productPrice",
                                 p."discountedPrice" as "productDiscountedPrice",
                                 concat('${baseURL}', p."imageURL") as "imagePath" 
@@ -45,93 +44,30 @@ class CartController {
         const userId = decodedtoken.id
         const productId = +req.params.productId
 
-        sequelize.query(`select stock from "Products" c where id = ${productId}`, { type: sequelize.QueryTypes.SELECT })
-            .then(data => {
-
-                sequelize.query(`select * from "Carts" c where "userId" = ${userId} and "productId" = ${productId}`, { type: sequelize.QueryTypes.SELECT })
-                    .then(data2 => {
-
-                        if (data2.length > 0) {
-                            if (data[0].stock <= data2[0].quantity) {
-                                throw { message: `Stock yang tersisa untuk produk ini hanya tinggal ${data[0].stock}` }
-                            }
-                        }
-
-                        if (!data2 || data2.length === 0) {
-                            Cart.create({
-                                userId,
-                                productId,
-                                quantity: 1
-                            })
-                                .then(data => {
-                                    res.status(201).json({ success: true, message: `Produk berhasil ditambahkan ke keranjang`, result: data })
-                                })
-                                .catch(err => {
-                                    console.log(err);
-                                    next({ message: err.message })
-                                })
-
-                        } else {
-                            sequelize.query(`update "Carts" set quantity = quantity + 1 where "userId" = ${userId} and "productId" = ${productId}`, { type: sequelize.QueryTypes.UPDATE })
-                                .then(data => {
-                                    res.status(200).json({ success: true, message: `Produk berhasil ditambahkan ke keranjang`, result: data })
-                                })
-                                .catch(err => {
-                                    console.log(err);
-                                    next({ message: err.message })
-                                })
-                        }
-                    })
-                    .catch(err => {
-                        console.log(err);
-                        next({ message: err.message })
-                    })
-            })
-            .catch(err => {
-                console.log(err);
-                next({ message: err.message })
-            })
-    }
-
-    static minusFromCart(req, res, next) {
-        const decodedtoken = decodeToken(req.headers.access_token)
-        const userId = decodedtoken.id
-
-        const productId = +req.params.productId
-
         sequelize.query(`select * from "Carts" c where "userId" = ${userId} and "productId" = ${productId}`, { type: sequelize.QueryTypes.SELECT })
-            .then(data => {
-
-                if (!data || data.length === 0) {
-                    throw { message: `No product found in cart user ${userId} sudah terdaftar` }
-                }
-
-                if (data[0].quantity === 1) {
-                    sequelize.query(`delete from "Carts" c where "userId" = ${userId} and "productId" = ${productId}`, { type: sequelize.QueryTypes.DELETE })
+            .then(data2 => {
+                if (!data2 || data2.length === 0) {
+                    Cart.create({
+                        userId,
+                        productId
+                    })
                         .then(data => {
-                            res.status(200).json({ success: true, message: `Produk berhasil dihapus dari keranjang`, result: data })
+                            res.status(201).json({ success: true, message: `Produk berhasil ditambahkan ke keranjang`, result: data })
                         })
                         .catch(err => {
                             console.log(err);
                             next({ message: err.message })
                         })
                 } else {
-
-                    sequelize.query(`update "Carts" set quantity = quantity - 1 where "userId" = ${userId} and "productId" = ${productId}`, { type: sequelize.QueryTypes.UPDATE })
-                        .then(data => {
-                            res.status(200).json({ success: true, message: `Produk berhasil dikurangi di keranjang`, result: data })
-                        })
-                        .catch(err => {
-                            console.log(err);
-                            next({ message: err.message })
-                        })
+                    throw { message: 'Produk sudah ada di keranjang' }
                 }
-
             })
             .catch(err => {
                 console.log(err);
                 next({ message: err.message })
             })
+
+
     }
 
     static deleteFromCart(req, res, next) {

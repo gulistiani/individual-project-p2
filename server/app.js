@@ -12,11 +12,12 @@ global.__basedir = __dirname;
 // var corsOptions = {
 //     origin: "https://e-commerce-admin-fd223.web.app"
 // };
-var corsOptions = {
-    origin: "http://localhost:8080"
-};
 
-app.use(cors(corsOptions));
+// var corsOptions = {
+//     origin: "http://localhost:8080"
+// };
+
+//app.use(cors(corsOptions));
 
 app.use(cors())
 app.use(express.urlencoded({ extended: true }))

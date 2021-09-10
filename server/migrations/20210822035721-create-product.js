@@ -26,6 +26,9 @@ module.exports = {
       imageURL: {
         type: Sequelize.STRING
       },
+      instructor: {
+        type: Sequelize.STRING
+      },
       categoryId: {
         type: Sequelize.INTEGER
       },

@@ -1,29 +1,32 @@
 [
     {
-        "name": "The Complete JavaScript CourseL From Zero to Expert",
+        "name": "The Complete JavaScript Course From Zero to Expert",
         "description": "Kita akan belajar ....",
         "alias": "javascript node react",
         "price": 100000,
-        "discountedPrice": 90000,
+        "discountedPrice": null,
         "imageURL": "js.jpg",
+        "instructor": "Kakashi Sensei",
         "categoryId": 1
     },
     {
-        "name": "Flutter & Dart - The Complete Guide",
+        "name": "Flutter & Dart - The Complete Guide A-Z 2021",
         "description": "Kita akan belajar ....",
         "alias": "flutter dart frontend",
         "price": 100000,
         "discountedPrice": 90000,
         "imageURL": "flutter.jpg",
+        "instructor": "Kakashi Sensei",
         "categoryId": 1
     },
     {
-        "name": "100 Days of COde - The Complete Python Pro Bootcamp for 2021",
+        "name": "100 Days of Code - The Complete Python Pro Bootcamp for 2021",
         "description": "Kita akan belajar ....",
         "alias": "python bootcamp programming",
         "price": 100000,
         "discountedPrice": 90000,
         "imageURL": "python.jpg",
+        "instructor": "Kurenai Sensei",
         "categoryId": 1
     },
     {
@@ -31,17 +34,19 @@
         "description": "Kita akan belajar ....",
         "alias": "javascript node react",
         "price": 100000,
-        "discountedPrice": 90000,
+        "discountedPrice": null,
         "imageURL": "webdev.jpg",
+        "instructor": "Kurenai Sensei",
         "categoryId": 1
     },
     {
-        "name": "PHP Laravel from Beginner to Master",
+        "name": "PHP Laravel from Beginner to Master with Sample Projects",
         "description": "Kita akan belajar ....",
         "alias": "php laravel",
         "price": 100000,
         "discountedPrice": 90000,
         "imageURL": "laravel.jpg",
+        "instructor": "Iruka Sensei",
         "categoryId": 1
     },
     {
@@ -51,15 +56,17 @@
         "price": 100000,
         "discountedPrice": 90000,
         "imageURL": "cicd.jpg",
+        "instructor": "Iruka Sensei",
         "categoryId": 2
     },
     {
-        "name": "Machine Learning Bootcamp with Python",
+        "name": "Machine Learning Bootcamp with Python [Updated 2021]",
         "description": "Kita akan belajar ....",
         "alias": "ai machine learning big data python bootcamp",
         "price": 100000,
-        "discountedPrice": 90000,
+        "discountedPrice": null,
         "imageURL": "ml.jpg",
+        "instructor": "Kakashi Sensei",
         "categoryId": 1
     },
     {
@@ -69,15 +76,17 @@
         "price": 100000,
         "discountedPrice": 90000,
         "imageURL": "docker.jpg",
+        "instructor": "Guy Sensei",
         "categoryId": 2
     },
     {
-        "name": "Master the Linux in 11 Hours",
+        "name": "Master the Linux Command in 11 Hours",
         "description": "Kita akan belajar ....",
         "alias": "linux server devops",
         "price": 100000,
-        "discountedPrice": 90000,
+        "discountedPrice": null,
         "imageURL": "linux.jpg",
+        "instructor": "Guy Sensei",
         "categoryId": 2
     },
     {
@@ -87,6 +96,7 @@
         "price": 100000,
         "discountedPrice": 90000,
         "imageURL": "tableau.jpg",
+        "instructor": "Jiraiya Sensei",
         "categoryId": 3
     },
     {
@@ -96,15 +106,17 @@
         "price": 100000,
         "discountedPrice": 90000,
         "imageURL": "dwh.jpg",
+        "instructor": "Jiraiya Sensei",
         "categoryId": 3
     },
     {
-        "name": "React - The Complete Guide",
+        "name": "React - From Zero to Hero (incl Hooks, React Router, Redux",
         "description": "Kita akan belajar ....",
         "alias": "javascript react",
         "price": 100000,
-        "discountedPrice": 90000,
+        "discountedPrice": null,
         "imageURL": "react.jpg",
+        "instructor": "Kakashi Sensei",
         "categoryId": 1
     },
     {
@@ -112,8 +124,9 @@
         "description": "Kita akan belajar ....",
         "alias": "dwh data warehouse datamart ETL pentaho",
         "price": 100000,
-        "discountedPrice": 90000,
+        "discountedPrice": null,
         "imageURL": "pentaho.jpg",
+        "instructor": "Kurenai Sensei",
         "categoryId": 3
     },
     {
@@ -122,7 +135,8 @@
         "alias": "devops ci cd",
         "price": 100000,
         "discountedPrice": 90000,
-        "imageURL": "webdev.jpg",
+        "imageURL": "devops.jpg",
+        "instructor": "Guy Sensei",
         "categoryId": 2
     },
     {
@@ -132,6 +146,7 @@
         "price": 100000,
         "discountedPrice": 90000,
         "imageURL": "ccna.jpg",
+        "instructor": "Kakashi Sensei",
         "categoryId": 4
     },
     {
@@ -139,8 +154,9 @@
         "description": "Kita akan belajar ....",
         "alias": "security cyber hacker",
         "price": 100000,
-        "discountedPrice": 90000,
+        "discountedPrice": null,
         "imageURL": "cyber.jpg",
+        "instructor": "Asuma Sensei",
         "categoryId": 4
     },
     {
@@ -150,6 +166,7 @@
         "price": 100000,
         "discountedPrice": 90000,
         "imageURL": "deeplearning.jpg",
+        "instructor": "Yamato Sensei",
         "categoryId": 3
     },
     {
@@ -157,8 +174,9 @@
         "description": "Kita akan belajar ....",
         "alias": "hack network security",
         "price": 100000,
-        "discountedPrice": 90000,
+        "discountedPrice": null,
         "imageURL": "hacking.jpg",
+        "instructor": "Yamato Sensei",
         "categoryId": 4
     }
 ]

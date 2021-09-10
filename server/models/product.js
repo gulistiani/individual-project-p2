@@ -42,6 +42,7 @@ module.exports = (sequelize, DataTypes) => {
       }
     },
     imageURL: DataTypes.STRING,
+    instructor: DataTypes.STRING,
     categoryId: DataTypes.INTEGER
   }, {
     sequelize,
