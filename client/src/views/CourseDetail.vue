@@ -99,7 +99,7 @@
                                     <tr>
                                         <th>Type</th>
                                         <th>Lesson Title</th>
-                                        <th>Time</th>
+                                        <th class="text-center">Time</th>
                                         <th>Status</th>
                                     </tr>
                                 </thead>
@@ -109,7 +109,7 @@
                                         :key="productDetailTopic.id">
                                         <td><i class="mdi mdi-play-circle"></i></td>
                                         <td>{{productDetailTopic.title}}</td>
-                                        <td>{{productDetailTopic.duration}}</td>
+                                        <td class="text-right">{{productDetailTopic.duration}}</td>
                                         <td>-</td>
                                     </tr>
                                 </tbody>
@@ -128,7 +128,9 @@
                                                 </div>
                                             </div>
                                         </td>
-                                        <td>{{productDetailTopic.duration}}</td>
+                                        <td>{{Math.round(productDetailTopic.duration/60) }} menit
+                                            {{productDetailTopic.duration % 60 }} detik
+                                        </td>
                                         <td>{{productDetailTopic.progress}}</td>
                                     </tr>
                                 </tbody>

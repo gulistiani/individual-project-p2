@@ -20,7 +20,7 @@
                         @ended="getWatched" class=" "></youtube>
                 </div>
 
-                <!-- <div class="w-6/12 mx-auto">
+                <div class="w-6/12 mx-auto">
                     <div class="flex justify-between">
                         <button v-if="topic.sequence === 1" disabled
                             class="mx-1 my-4 w-60 h-20 border-radius text-center rounded-lg text-2xl text-white bg-gray-400">Prev
@@ -36,7 +36,7 @@
                             class="mx-1 my-4 w-60 h-20 border-radius text-center rounded-lg text-2xl text-white btn-primary">Next
                         </button>
                     </div>
-                </div> -->
+                </div>
             </div>
         </section>
 

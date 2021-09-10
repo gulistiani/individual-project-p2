@@ -3,7 +3,7 @@
     <Header></Header>
     <Hero></Hero>
 
-    <section class="white section">
+    <section class="grey section">
       <div class="container ">
         <div class="row">
           <div class="col-md-12">
