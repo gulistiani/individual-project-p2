@@ -357,10 +357,14 @@ class ProductController {
     }
 
     static download = (req, res, next) => {
+        console.log('----------------------- sampe sini');
         const fileName = req.params.name;
+        console.log('----------------------- 362');
         const directoryPath = __basedir + "/public/image/courses/";
+        console.log('----------------------- 364');
 
         res.sendFile(directoryPath + fileName, fileName, (err) => {
+            console.log('----------------------- 367');
             if (err) {
                 console.log('------------------------------ download');
                 console.log(err);

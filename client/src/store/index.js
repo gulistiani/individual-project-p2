@@ -3,8 +3,8 @@ import Vuex from 'vuex'
 import axios from 'axios'
 import router from '../router'
 
-const axiosInstance = axios.create({ baseURL: 'https://academyster.herokuapp.com/' })
-//const axiosInstance = axios.create({ baseURL: 'http://localhost:3000' })
+//const axiosInstance = axios.create({ baseURL: 'https://academyster.herokuapp.com/' })
+const axiosInstance = axios.create({ baseURL: 'http://localhost:3000' })
 
 Vue.use(Vuex)
 

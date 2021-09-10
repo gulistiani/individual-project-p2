@@ -9,15 +9,15 @@ const cors = require('cors')
 const errorHandler = require('./middlewares/errorHandler')
 
 global.__basedir = __dirname;
-var corsOptions = {
-    origin: "https://academyster-gulis.web.app"
-};
+// var corsOptions = {
+//     origin: "https://academyster-gulis.web.app"
+// };
 
 // var corsOptions = {
 //     origin: "http://localhost:8080"
 // };
 
-app.use(cors(corsOptions));
+// app.use(cors(corsOptions));
 
 app.use(cors())
 app.use(express.urlencoded({ extended: true }))
